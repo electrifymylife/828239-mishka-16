@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+  	<header class="page-header">
+      <a class="page-header__logo>
+      	<!-- <img class=""> -->
+      	<img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+      	<button class="main-nav__toggle" type="button">Открыть меню</button>
+      	<div class="main-nav__wrapper">
+        	<ul class="main-nav__list site-list">
+          	<li class="site-list__item">
+            	<a href="#">Каталог товаров</a>
+          	</li>
+          	<li class="site-list__item">
+            	<a href="#">Вязание на заказ</a>
+          	</li>
+          	<li class="site-list__item">
+            	<a href="#">Новые поступления</a>
+          	</li>
+          	<li class="site-list__item">
+            	<a href="#">Распродажа</a>
+          	</li>
+        	</ul>
+        	<ul class="main-nav__list user-list">
+          	<li class="user-list__item">
+            	<a class="user-list__search" href="#">Поиск</a>
+          	</li>
+          	<li class="user-list__item">
+            	<a class="user-list__basket" href="#">Корзина</a>
+          	</li>
+        	</ul>
+        	<p class="main-nav__shipping">Бесплатная доставка по России</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+    	<h1 class="page-main__title">Вязание на заказ</h1>
+    	<p class="page-main__invitation">
+    		Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+    	</p>
+    	<form class="purchase" id="purchase-id" method="get" action="https://echo.htmlacademy.ru">
+	    	<div class="purchase__type type">
+	    		<h2 class="type__title">Тип</h2>
+	    		<ul class="type__list">
+	    			<li class="type__item">
+	    				<label><input class="type__item-interior" type="radio" name="interior" form="purchase-id" checked>Аксессуар для интерьера</label>
+	    			</li>
+	    			<li class="type__item">
+	    				<label><input class="type__item-toy" type="radio" name="toy" form="purchase-id">Детская игрушка</label>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="purchase__colour colour">
+	    		<h2 class="colour__title">Цвет</h2>
+	    		<ul class="colour__list">
+	    			<li class="colour__item">
+	    				<label><input class="colour__item-white" type="checkbox" name="white" form="purchase-id" checked>Белый</label>
+	    			</li>
+	    			<li class="colour__item">
+	    				<label><input class="colour__item-gray" type="checkbox" name="gray" form="purchase-id" checked>Серый</label>
+	    			</li>
+	    			<li class="colour__item">
+	    				<label><input class="colour__item-tiffany" type="checkbox" name="tiffany" form="purchase-id">"Тиффани"</label>
+	    			</li>
+	    			<li class="colour__item">
+	    				<label><input class="colour__item-black" type="checkbox" name="black" form="purchase-id">Белый</label>
+	    			</li>
+	    			<li class="colour__item">
+	    				<label><input class="colour__item-pink" type="checkbox" name="pink" form="purchase-id">Розовый</label>
+	    			</li>
+	    			<li class="colour__item">
+	    				<label><input class="colour__item-orange" type="checkbox" name="orange" form="purchase-id">Оранжевый</label>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="purchase__name name">
+	    		<h2 class="name__title">ФИО</h2>
+	    		<ul class="name__list">
+	    			<li class="name__item">
+	    				<label>Имя:<input class="name__item-name" type="text" name="name" form="purchase-id" placeholder="Введите ваше имя*" required></label>
+	    			</li>
+	    			<li class="name__item">
+	    				<label>Фамилия:<input class="name__item-surname" type="text" name="surname" form="purchase-id" placeholder="Укажите фамилию*" required></label>
+	    			</li>
+	    			<li class="name__item">
+	    				<label>Отчество:<input class="name__item-patronymic" type="text" name="patronymic" form="purchase-id" placeholder="Отчество, если желаете"></label>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="purchase__contacts contacts">
+	    		<ul class="contacts__list">
+	    			<li class="contacts__item">
+	    				<h2 class="contacts__title-tel">Тел</h2>
+	    				<label>Тел<input class="contacts__item-tel" type="tel" name="tel" form="purchase-id" placeholder="+7 XXX XXX XX XX*" required></label>
+	    			</li>
+	    			<li class="contacts__item">
+	    				<h2 class="contacts__title-email">E-mail</h2>
+	    				<label>Тел<input class="contacts__item-email" type="email" name="email" form="purchase-id" placeholder="Ваш E-mail*" required></label>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<div class="purchase__add add">
+	    		<h2 class="add__title">Доп</h2>
+	    		<textarea class="add__text" form="purchase-id" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+	    	</div>
+	    	<p class="purchase__warning">*Поля обязательны для заполнения</p>
+	    	<button class="purchase__send" type="submit">Отправить заказ</button>
+	    </form>
+    </main>
+
+    <footer class="page-footer">
+    	<section class="page-footer__contacts contacts">
+      	<table class="contacts__list">
+      		<tr>
+      			<td class="contacts__field">e-mail:</td>
+      			<td class="contacts__value">info@mimimishkashop.ru</td>
+      		</tr>
+      		<tr>
+      			<td class="contacts__field">адрес:</td>
+      			<td class="contacts__value">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+      		</tr>
+    		</table>
+    		<div class="page-footer__map-image">
+        	<img src="http://placehold.it/150x100" width="150" height="100" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+       	</div>
+       	<button class="contacts__write" type="button">Напишите нам</button>
+      </section>
+      <section class="page-footer__social social">
+      	<h2 class="visually-hidden">Соцсети</h2>
+      	<a class="page-footer__logo>
+      		<!-- <img class="> -->
+      		<img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка">
+      	</a>
+      	<ul class="social__list">
+      		<li class="social__item">
+      			<a href="#">Инстаграм</a>
+      		</li>
+      		<li class="social__item">
+      			<a href="#">Фейсбук</a>
+      		</li>
+      		<li class="social__item">
+      			<a href="#">Твиттер</a>
+      		</li>
+      	</ul>
+      	<a href="#">Разработано</a>
+      </section>
+    </footer>
+
+  </body>
+</html>

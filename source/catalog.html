@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+  	<header class="page-header">
+      <a class="page-header__logo>
+      	<!-- <img class=""> -->
+      	<img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+      	<button class="main-nav__toggle" type="button">Открыть меню</button>
+      	<div class="main-nav__wrapper">
+        	<ul class="main-nav__list site-list">
+          	<li class="site-list__item">
+            	<a href="#">Каталог товаров</a>
+          	</li>
+          	<li class="site-list__item">
+            	<a href="#">Вязание на заказ</a>
+          	</li>
+          	<li class="site-list__item">
+            	<a href="#">Новые поступления</a>
+          	</li>
+          	<li class="site-list__item">
+            	<a href="#">Распродажа</a>
+          	</li>
+        	</ul>
+        	<ul class="main-nav__list user-list">
+          	<li class="user-list__item">
+            	<a class="user-list__search" href="#">Поиск</a>
+          	</li>
+          	<li class="user-list__item">
+            	<a class="user-list__basket" href="#">Корзина</a>
+          	</li>
+        	</ul>
+        	<p class="main-nav__shipping">Бесплатная доставка по России</p>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+    	<h1 class="page-main__title">Каталог товаров</h1>
+    	<section class="products">
+    		<h2 class="visually-hidden">Товары</h2>
+    		<ul class="products__list">
+    			<li class="products__item">
+    				<p class="products__item-image">
+    					<img src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик">
+    				</p>
+    				<div class="products__item-description">
+    					<a href="#"><h3 class="products__item-name">Зайчик-попрыгайчик</h3></a>
+    					<p class="products__item-property">Рост 30 см, вес 200 г</p>
+    					<p class="products__item-price">1200 руб.</p>
+    					<button class="products__item-buy" type="button">Купить</button>
+    				</div>
+    			</li>
+    			<li class="products__item">
+    				<p class="products__item-image">
+    					<img src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик">
+    				</p>
+    				<div class="products__item-description">
+    					<a href="#"><h3 class="products__item-name">Корзинка для белья</h3></a>
+    					<p class="products__item-property">Диаметр 15 см, высота 10 см</p>
+    					<p class="products__item-price">690 руб.</p>
+    					<button class="products__item-buy" type="button">Купить</button>
+    				</div>
+    			</li>
+    			<li class="products__item">
+    				<p class="products__item-image">
+    					<img src="http://placehold.it/150x100" width="150" height="100" alt="Зайчик-попрыгайчик">
+    				</p>
+    				<div class="products__item-description">
+    					<a href="#"><h3 class="products__item-name">Большая корзинка для игрушек</h3></a>
+    					<p class="products__item-property">Диаметр 30 см, высота 30 см</p>
+    					<p class="products__item-price">1500 руб.</p>
+    					<button class="products__item-buy" type="button">Купить</button>
+    				</div>
+    			</li>
+    		</ul>
+    	</section>
+    	<section class="process">
+    		<h2 class="process__title">Процесс производства</h2>
+    		<video class="process__video" controls preload="metadata" width="100" height="100">
+    			<source src="#" type="video/mp4">
+    		</video>
+    		<p class="process__text">
+    			По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+    		</p>
+    		<button class="process_buy" type="button">Сделать заказ</button>
+    	</section>
+    </main>
+
+    <footer class="page-footer">
+    	<section class="page-footer__contacts contacts">
+      	<table class="contacts__list">
+      		<tr>
+      			<td class="contacts__field">e-mail:</td>
+      			<td class="contacts__value">info@mimimishkashop.ru</td>
+      		</tr>
+      		<tr>
+      			<td class="contacts__field">адрес:</td>
+      			<td class="contacts__value">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+      		</tr>
+    		</table>
+    		<div class="page-footer__map-image">
+        	<img src="http://placehold.it/150x100" width="150" height="100" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+       	</div>
+       	<button class="contacts__write" type="button">Напишите нам</button>
+      </section>
+      <section class="page-footer__social social">
+      	<h2 class="visually-hidden">Соцсети</h2>
+      	<a class="page-footer__logo>
+      		<!-- <img class="> -->
+      		<img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка">
+      	</a>
+      	<ul class="social__list">
+      		<li class="social__item">
+      			<a href="#">Инстаграм</a>
+      		</li>
+      		<li class="social__item">
+      			<a href="#">Фейсбук</a>
+      		</li>
+      		<li class="social__item">
+      			<a href="#">Твиттер</a>
+      		</li>
+      	</ul>
+      	<a href="#">Разработано</a>
+      </section>
+    </footer>
+
+  </body>
+</html>
