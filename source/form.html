@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"  type="text/css">
   </head>
   <body>
   	<header class="page-header">
@@ -32,7 +33,7 @@
             	<a class="user-list__search" href="#">Поиск</a>
           	</li>
           	<li class="user-list__item">
-            	<a class="user-list__basket" href="#">Корзина</a>
+            	<a class="user-list__basket" href="#">Корзина: пока пуста</a>
           	</li>
         	</ul>
         	<p class="main-nav__shipping">Бесплатная доставка по России</p>
@@ -94,15 +95,15 @@
 	    			</li>
 	    		</ul>
 	    	</div>
-	    	<div class="purchase__contacts contacts">
-	    		<ul class="contacts__list">
-	    			<li class="contacts__item">
-	    				<h2 class="contacts__title-tel">Тел</h2>
-	    				<label>Тел<input class="contacts__item-tel" type="tel" name="tel" form="purchase-id" placeholder="+7 XXX XXX XX XX*" required></label>
+	    	<div class="purchase__contacts form-contacts">
+	    		<ul class="form-contacts__list">
+	    			<li class="form-contacts__item">
+	    				<h2 class="form-contacts__title-tel">Тел</h2>
+	    				<label>Тел<input class="form-contacts__item-tel" type="tel" name="tel" form="purchase-id" placeholder="+7 XXX XXX XX XX*" required></label>
 	    			</li>
-	    			<li class="contacts__item">
-	    				<h2 class="contacts__title-email">E-mail</h2>
-	    				<label>Тел<input class="contacts__item-email" type="email" name="email" form="purchase-id" placeholder="Ваш E-mail*" required></label>
+	    			<li class="form-contacts__item">
+	    				<h2 class="form-contacts__title-email">E-mail</h2>
+	    				<label>Тел<input class="form-contacts__item-email" type="email" name="email" form="purchase-id" placeholder="Ваш E-mail*" required></label>
 	    			</li>
 	    		</ul>
 	    	</div>
@@ -117,7 +118,7 @@
 
     <footer class="page-footer">
     	<section class="page-footer__contacts contacts">
-    		<h2 class="visually-hidden">Контакты</h2>
+    		<h2 class="page-footer__title">Контакты</h2>
       	<table class="contacts__list">
       		<tr>
       			<td class="contacts__field">e-mail:</td>
@@ -135,7 +136,7 @@
       </section>
       <section class="page-footer__social social">
       	<h2 class="visually-hidden">Соцсети</h2>
-      	<a class="page-header__logo">
+      	<a class="page-footer__logo">
         	<img class="page-footer__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка">
       	</a>
       	<ul class="social__list">
