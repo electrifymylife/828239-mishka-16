@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Open-Sans, Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 400;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
   line-height: 30px;
-  color: #000000;
+  color: $main-font-color;
   min-width: 1200px;
-  background-color: #ffffff;
+  background-color: $main-color;
 }
 
 a  {

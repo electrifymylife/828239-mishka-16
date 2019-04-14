@@ -1,5 +1,27 @@
 .feedback {
-  background-color: #ffffff;
+  background-color: $main-color;
   background-image: url("../img/review@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.feedback__body {
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  line-height: 30px;
+}
+
+.feedback__name {
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.feedback__nickname {
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  line-height: 30px;
+}
+
+.feedback__title {
+  @include title;
 }

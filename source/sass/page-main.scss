@@ -1,0 +1,9 @@
+.page-main__title {
+  @include title;
+}
+
+.page-main__invitation {
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  line-height: 30px;
+}
