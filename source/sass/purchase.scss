@@ -1,0 +1,20 @@
+.type__title,
+.colour__title,
+.name__title,
+.form-contacts__title-tel,
+.form-contacts__title-email,
+.add__title {
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 17px;
+  color: $mint-color;
+  text-transform: uppercase;
+}
+
+.type__item,
+.colour__item,
+.name__item {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+}
