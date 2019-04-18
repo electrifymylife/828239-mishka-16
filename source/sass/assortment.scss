@@ -1,7 +1,17 @@
+.assortment__wrapper {
+  background-color: $gray-color;
+  background-image: url("../img/hero-desktop@1x.jpg");
+  background-repeat: no-repeat;
+}
+
 .assortment {
   font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 0.7em;
   color: $main-color;
   background-color: $mint-color;
+}
+
+.assortment__list {
+  display: flex;
 }

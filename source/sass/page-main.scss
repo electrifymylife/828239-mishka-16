@@ -5,5 +5,9 @@
 .page-main__invitation {
   font-size: $main-font-size;
   font-weight: $main-font-weight;
-  line-height: 30px;
+  line-height: 0.6em;
+}
+
+.page-main-ttl__wrapper {
+  background-color: $gray-color;
 }

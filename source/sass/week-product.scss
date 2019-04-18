@@ -5,7 +5,7 @@
 .week-product__advantages {
   font-size: $main-font-size;
   font-weight: $main-font-weight;
-  line-height: 30px;
+  line-height: 0.6em;
 }
 
 .week-product__current {
@@ -15,19 +15,27 @@
 .week-product__description {
   font-size: 15px;
   font-weight: 20px;
-  line-height: 20px;
+  line-height: 0.8em;
 }
 
 .week-product__price {
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 0.8em;
 }
 
 .week-product__title {
   color: $mint-color;
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 17px;
+  line-height: 1em;
   text-transform: uppercase;
+}
+
+.week-product-ttl__wrapper {
+  display: flex;
+}
+
+.week-product__wrapper {
+  display: flex;
 }
