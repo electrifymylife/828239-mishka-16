@@ -6,7 +6,7 @@
 .add__title {
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 17px;
+  line-height: 1em;
   color: $mint-color;
   text-transform: uppercase;
 }
@@ -16,5 +16,18 @@
 .name__item {
   font-size: 19px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 1em;
+}
+
+.type,
+.colour,
+.name,
+.form-contacts__item,
+.add {
+  display: flex;
+}
+
+.purchase__wrapper {
+  display: flex;
+  justify-content: space-between;
 }

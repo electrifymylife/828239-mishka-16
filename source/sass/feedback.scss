@@ -4,22 +4,27 @@
   background-repeat: no-repeat;
 }
 
+.feedback-ttl__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback__nickname,
 .feedback__body {
   font-size: $main-font-size;
   font-weight: $main-font-weight;
-  line-height: 30px;
+  line-height: 0.6em;
 }
 
 .feedback__name {
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 30px;
-}
-
-.feedback__nickname {
-  font-size: $main-font-size;
-  font-weight: $main-font-weight;
-  line-height: 30px;
+  line-height: 0.6em;
 }
 
 .feedback__title {

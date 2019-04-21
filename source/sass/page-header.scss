@@ -1,0 +1,56 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-list {
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main-list__item {
+  color: $main-font-color;
+}
+
+.add-list {
+  display: flex;
+}
+
+.add-list__item {
+  font-size: $main-font-size;
+}
+
+.user-list {
+  display: flex;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.user-list__item {
+  color: $main-font-color;
+}
+
+.add-nav__shipping {
+  font-size: 15px;
+  font-weight: $main-font-weight;
+  line-height: 24px;
+  color: $main-font-color;
+}

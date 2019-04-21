@@ -1,20 +1,24 @@
+.products__list {
+  display: flex;
+}
+
 .products__item-name {
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 0.8em;
   color: $main-font-color;
 }
 
 .products__item-property {
   font-size: 15px;
   font-weight: $main-font-weight;
-  line-height: 30px;
+  line-height: 0.5em;
   color: $main-font-color;
 }
 
 .products__item-price {
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 0.6em;
   color: $main-font-color;
 }

@@ -1,11 +1,17 @@
 .process__title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 0.8em;
 }
 
 .process__text {
   font-size: 15px;
   font-weight: $main-font-weight;
-  line-height: 30px;
+  line-height: 0.5em;
+}
+
+.process {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }

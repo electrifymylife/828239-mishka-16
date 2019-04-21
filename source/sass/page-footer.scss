@@ -5,6 +5,19 @@
 .page-footer__developed {
   font-size: 19px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 1em;
   color: $main-font-color;
+}
+
+.contacts {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__list {
+  display: flex;
 }
