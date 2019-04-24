@@ -1,32 +1,65 @@
 .feedback {
   background-color: $main-color;
+  min-height: 625px;
   background-image: url("../img/review@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 545px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 550px;
+  }
 }
 
-.feedback-ttl__wrapper {
+.feedback__wrapper--ttl {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .feedback__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .feedback__nickname,
 .feedback__body {
   font-size: $main-font-size;
   font-weight: $main-font-weight;
-  line-height: 0.6em;
+  line-height: 1.8;
 }
 
 .feedback__name {
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 0.6em;
+  line-height: 1.8;
 }
 
 .feedback__title {
   @include title;
+}
+
+.feedback__write {
+  width: 100px;
 }

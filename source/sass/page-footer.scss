@@ -2,22 +2,65 @@
   @include title;
 }
 
-.page-footer__developed {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1em;
-  color: $main-font-color;
+.contacts {
+  min-height: 900px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 930px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 635px;
+  }
 }
 
-.contacts {
+.contacts__wrapper {
   display: flex;
+  flex-direction: column;
+}
+
+.contacts__wrapper--main {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.contacts__write {
+  width: 100px;
 }
 
 .social {
+  min-height: 160px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 143px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .social__list {
   display: flex;
+}
+
+.page-footer__developed {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+  color: $main-font-color;
 }

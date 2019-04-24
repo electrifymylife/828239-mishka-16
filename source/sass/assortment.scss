@@ -1,17 +1,29 @@
-.assortment__wrapper {
-  background-color: $gray-color;
-  background-image: url("../img/hero-desktop@1x.jpg");
-  background-repeat: no-repeat;
-}
-
 .assortment {
   font-size: 20px;
   font-weight: 700;
-  line-height: 0.7em;
+  line-height: 1.5;
   color: $main-color;
   background-color: $mint-color;
+  min-height: 205px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 119px;
+  }
 }
 
 .assortment__list {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }

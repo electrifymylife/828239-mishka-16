@@ -6,7 +6,7 @@
 .add__title {
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1;
   color: $mint-color;
   text-transform: uppercase;
 }
@@ -16,7 +16,7 @@
 .name__item {
   font-size: 19px;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1;
 }
 
 .type,
@@ -29,5 +29,86 @@
 
 .purchase__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  min-height: 152px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 104px;
+  }
+}
+
+.purchase__send {
+  width: 100px;
+}
+
+.type {
+  min-height: 173px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 178px;
+  }
+}
+
+.colour {
+  min-height: 417px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 305px;
+    background-color: $gray-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 230px;
+    background-color: $gray-color;
+  }
+}
+
+.name {
+  min-height: 330px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 305px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 305px;
+  }
+}
+
+.form-contacts__list {
+  min-height: 215px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 225px;
+    background-color: $gray-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 228px;
+    background-color: $gray-color;
+  }
+}
+
+.add {
+  min-height: 200px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 240px;
+  }
 }

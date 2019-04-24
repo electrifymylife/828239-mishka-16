@@ -1,14 +1,10 @@
 @import "mixins";
 @import "variables";
 @import "about.scss";
-@import "add.scss";
 @import "assortment.scss";
-@import "colour.scss";
 @import "contacts.scss";
 @import "container";
 @import "feedback.scss";
-@import "form-contacts.scss";
-@import "name.scss";
 @import "page-footer.scss";
 @import "page-header.scss";
 @import "page-main.scss";
@@ -16,40 +12,5 @@
 @import "products.scss";
 @import "purchase.scss";
 @import "scaffolding.scss";
-@import "social.scss";
 @import "visually-hidden.scss";
 @import "week-product.scss";
-
-@media(min-width: $desktop-width){
-  .main-nav {
-    min-height: 88px;
-  }
-
-  .assortment__wrapper {
-    height: 745px;
-  }
-}
-
-@media(min-width: $tablet-width){
-  .main-nav {
-    min-height: 88px;
-  }
-
-  .assortment__wrapper {
-    height: 745px;
-  }
-
-  // .week-product-ttl__wrapper {
-  //   flex-direction: row-reverse;
-  // }
-}
-
-@media(min-width: $mobile-width){
-  .main-nav {
-    min-height: 80px;
-  }
-
-  // .assortment__wrapper {
-  //   // height: 60px;
-  // }
-}
