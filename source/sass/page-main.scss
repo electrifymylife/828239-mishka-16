@@ -1,5 +1,18 @@
 .page-main__title {
-  @include title;
+  @include style-none;
+  font-size: 27px;
+  line-height: 1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 1.2;
+    padding-top: 156px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title;
+  }
 }
 
 .page-main__invitation {
@@ -39,14 +52,16 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    min-height: 628px;
+    min-height: 754px;
+    width: $tablet-width;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -306px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 628px;
+    width: $desktop-width;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-repeat: no-repeat;
   }
 }

@@ -2,22 +2,26 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
-  color: $main-color;
   background-color: $mint-color;
   min-height: 205px;
+  width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
+    width: 668px;
+    margin-left: 50px;
+    margin-top: -128px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 119px;
+    width: 1050px;
   }
 }
 
 .assortment__list {
   display: flex;
   flex-direction: column;
+  @include style-none;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -25,5 +29,23 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding-left: 85px;
+    padding-top: 26px;
   }
 }
+
+
+.assortment__list a {
+  margin: 0;
+  color: $main-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 277px;
+  }
+}
+

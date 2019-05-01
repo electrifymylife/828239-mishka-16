@@ -1,3 +1,17 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("fonts/opensans.woff2") format("woff2"), url("fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("fonts/opensansbold.woff2") format("woff2"), url("fonts/opensansbold.woff") format("woff");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,11 +20,12 @@ body {
   font-weight: $main-font-weight;
   line-height: 1.8;
   color: $main-font-color;
+  letter-spacing: 2px;
   min-width: 1200px;
   background-color: $main-color;
 }
 
-a  {
+a {
   text-decoration: none;
 }
 
