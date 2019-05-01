@@ -1,24 +1,36 @@
 .products__list {
+  min-height: 1270px;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1245px;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 850px;
+    flex-direction: row;
+  }
 }
 
 .products__item-name {
   font-size: 20px;
   font-weight: 700;
-  line-height: 0.8em;
+  line-height: 1.2;
   color: $main-font-color;
 }
 
 .products__item-property {
   font-size: 15px;
   font-weight: $main-font-weight;
-  line-height: 0.5em;
+  line-height: 2;
   color: $main-font-color;
 }
 
 .products__item-price {
   font-size: $main-font-size;
   font-weight: 700;
-  line-height: 0.6em;
+  line-height: 1.8;
   color: $main-font-color;
 }

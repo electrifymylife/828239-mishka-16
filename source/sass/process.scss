@@ -1,17 +1,43 @@
 .process__title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 0.8em;
+  line-height: 1.2;
 }
 
 .process__text {
   font-size: 15px;
   font-weight: $main-font-weight;
-  line-height: 0.5em;
+  line-height: 2;
 }
 
-.process {
+.process__wrapper {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  flex-direction: column;
+  min-height: 560px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 743px;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 560px;
+    flex-direction: row;
+  }
+}
+
+.process__video {
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.process__buy {
+  width: 100px;
 }

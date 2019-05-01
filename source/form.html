@@ -3,7 +3,6 @@
 	<head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   	<meta name="format-detection" content="telephone=no">
   	<link href="css/normalize.css" rel="stylesheet">
@@ -16,13 +15,13 @@
               <div class="main-nav__wrapper">
                 <ul class="main-nav__list main-list">
                   <li class="main-list__item">
-                    <a href="#">Каталог товаров</a>
+                    <a href="catalog.html">Каталог товаров</a>
                   </li>
                   <li class="main-list__item">
                     <a href="#">Вязание на заказ</a>
                   </li>
                 </ul>
-                <a class="page-header__logo">
+                <a class="page-header__logo" href="index.html">
                   <img class="page-header__logo-image" src="img/logo-desktop.svg" width="149" height="72" alt="Мишка">
                 </a>
                 <ul class="main-nav__list user-list">
@@ -48,12 +47,12 @@
                 <p class="add-nav__shipping">Бесплатная доставка по России</p>
               </div>
             </nav>
-          </div>>
+          </div>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
         </header>
 
     <main class="page-main container">
-      <div class="page-main-ttl__wrapper">
+      <div class="page-main__wrapper--form">
         <h1 class="page-main__title">Вязание на заказ</h1>
       </div>
     	<p class="page-main__invitation">
@@ -133,23 +132,19 @@
 
     <footer class="page-footer container">
         <section class="page-footer__contacts contacts">
+          <h2 class="page-footer__title">Контакты</h2>
           <div class="contacts__wrapper">
-            <h2 class="page-footer__title">Контакты</h2>
-            <table class="contacts__list">
-              <tr>
-                <td class="contacts__field">e-mail:</td>
-                <td class="contacts__value">info@mimimishkashop.ru</td>
-              </tr>
-              <tr>
-                <td class="contacts__field">адрес:</td>
-                <td class="contacts__value">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-              </tr>
-            </table>
+            <div class="contacts__wrapper--main">
+              <div class="contacts__list">
+                <p class="contacts__email">e-mail: info@mimimishkashop.ru</p>
+                <p class="contacts__address">адрес: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+              </div>
+              <div class="page-footer__map-image">
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+              </div>
+            </div>
             <button class="contacts__write" type="button">Напишите нам</button>
           </div>
-          <div class="page-footer__map-image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-           </div>
         </section>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Соцсети</h2>
