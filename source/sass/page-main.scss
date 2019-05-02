@@ -1,12 +1,12 @@
 .page-main__title {
   @include style-none;
+  @include title-mobile;
   font-size: 27px;
   line-height: 1;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 1.2;
+    @include title-tablet;
     padding-top: 156px;
   }
 

@@ -1,5 +1,30 @@
 .page-footer__title {
-  @include title;
+  @include style-none;
+  @include title-mobile;
+  font-size: 18px;
+  line-height: 1.7;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title;
+    margin-top: 140px;
+    margin-left: 221px;
+  }
+}
+
+.contacts__email {
+  display: flex;
+  @include style-none;
+  margin-bottom: 29px;
+}
+
+.contacts__address {
+  display: flex;
+  @include style-none;
+  width: 300px;
 }
 
 .contacts {
@@ -17,6 +42,8 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 47px;
+  margin-left: 224px;
 }
 
 .contacts__wrapper--main {
@@ -30,6 +57,11 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
   }
+}
+
+.contacts__wrapper--txt {
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__write {

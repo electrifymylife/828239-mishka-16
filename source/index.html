@@ -72,17 +72,15 @@
         <h1 class="page-main__title">Милые штуки ручной<br> работы для дома</h1>
       </div>
       <section class="assortment">
-        <div class="assortment__wrapper">
           <h2 class="visually-hidden">Ассортимент магазина</h2>
-          <ul class="assortment__list">
-            <li class="assortment__item">
+          <div class="assortment__wrapper">
+            <div class="assortment__interior">
               <a href="#">Предметы интерьера</a>
-            </li>
-            <li class="assortment__item">
+            </div>
+            <div class="assortment__toys">
               <a href="#">Детские игрушки</a>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </div>
       </section>
       <section class="week-product">
         <div class="week-product__wrapper--ttl">
@@ -96,7 +94,7 @@
               <table class="week-product__description">
                 <tr>
                   <td class="week-product__feature">Цвет:</td>
-                  <td class="week-product__value">"Тиффани"/серый</td>
+                  <td class="week-product__value">«Тиффани»/серый</td>
                 </tr>
                 <tr>
                   <td class="week-product__feature">Диаметр:</td>
@@ -109,7 +107,11 @@
               </table>
             </div>
             <div class="week-product__pic">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Товар недели">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+                <img src="img/triple-set-mobile@1x.jpg" width="525" height="636" alt="Товар недели">
+              </picture>
             </div>
           </div>
           <div class="week-product__wrapper--price">
@@ -151,8 +153,16 @@
             <p class="feedback__nickname">@misssssiskras</p>
           </div>
           <div class="feedback__wrapper--btn">
-            <button class="feedback__prev" type="button">Предыдущий отзыв</button>
-            <button class="feedback__next" type="button">Следующий отзыв</button>
+            <a class="feedback__prev" href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+              </svg>
+            </a>
+            <a class="feedback__next" href="#">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -163,11 +173,17 @@
         <h2 class="page-footer__title">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__wrapper--main">
-            <div class="contacts__list">
-              <p class="contacts__email">e-mail: info@mimimishkashop.ru</p>
-              <p class="contacts__address">адрес: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            <div class="contacts__wrapper--txt">
+              <div class="contacts__email">
+                <p class="contacts__email--ttl">e-mail:</p>
+                <p class="contacts__email--body">info@mimimishkashop.ru</p>
+              </div>
+              <div class="contacts__address">
+                <p class="contacts__address--ttl">адрес:</p>
+                <p class="contacts__address--body">г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+              </div>
             </div>
-            <div class="page-footer__map-image">
+            <div class="contacts__map-image">
               <img src="http://placehold.it/150x100" width="150" height="100" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
             </div>
           </div>

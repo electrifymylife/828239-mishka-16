@@ -5,8 +5,37 @@
   color: $main-font-color;
 }
 
+@mixin title-tablet {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $main-font-color;
+}
+
+@mixin title-mobile {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $main-font-color;
+}
+
 @mixin style-none {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 14px 98px;
+  font: inherit;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $main-font-color;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $main-color;
+  border: 2px solid $main-font-color;
 }
