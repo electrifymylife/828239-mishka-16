@@ -57,7 +57,7 @@
   width: $mobile-width;
   height: 1px;
   top: 79px;
-  right: 14px;
+  right: 0;
   background-image: url(../img/Layer-9.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -123,8 +123,7 @@
   font-weight: 700;
   line-height: 1.6;
   margin-top: 107px;
-  margin-left: 61px;
-  // border-bottom: 1px solid #ececec;
+  margin-left: 75px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -196,7 +195,7 @@
   position: absolute;
   width: $mobile-width;
   height: 1px;
-  right: 14px;
+  right: 0;
   background-image: url(../img/Layer-9.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -238,7 +237,7 @@
   position: absolute;
   top: 0px;
   margin-top: 22px;
-  margin-left: 100px;
+  margin-left: 115px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -273,7 +272,10 @@
 .add-list a {
   color: $main-font-color;
   font-size: $main-font-size;
-  margin-right: 26px;
+  font-weight: $bold-font-weight;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  margin-right: 64px;
 }
 
 .add-list a[href] {
@@ -294,7 +296,7 @@
   font-size: $main-font-size;
   font-weight: 700;
   line-height: 1.4;
-  margin-left: 60px;
+  margin-left: 75px;
   letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
@@ -314,16 +316,18 @@
 
 .user-list a {
   color: $main-font-color;
-}
 
-.user-list a[href] {
   &:hover,
   &:focus {
     color: #666666;
+
+    svg path {
+      fill: $mint-color;
+    }
   }
 
   &:active {
-    color: #b2b2b2;
+    opacity: 0.3;
   }
 }
 
@@ -348,7 +352,7 @@
   position: absolute;
   width: $mobile-width;
   height: 1px;
-  right: 14px;
+  right: 0;
   background-image: url(../img/Layer-9.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -397,7 +401,7 @@
   position: absolute;
   width: $mobile-width;
   height: 1px;
-  right: 14px;
+  right: 0;
   bottom: 28px;
   background-image: url(../img/Layer-9.png);
   background-repeat: no-repeat;
@@ -434,16 +438,7 @@
   position: absolute;
   opacity: 0.2;
   top: 269px;
-  right: 285px;
-
-  &:hover path,
-  &:focus path{
-    fill: $mint-color;
-  }
-
-  &:active path {
-    fill: #d0f1ea;
-  }
+  right: 270px;
 
   @media (min-width: $tablet-width) {
     top: 37px;
@@ -460,16 +455,7 @@
   position: absolute;
   opacity: 0.2;
   top: 346px;
-  right: 284px;
-
-  &:hover path,
-  &:focus path{
-    fill: $mint-color;
-  }
-
-  &:active path {
-    fill: #d0f1ea;
-  }
+  right: 270px;
 
   @media (min-width: $tablet-width) {
     top: 34px;
@@ -505,17 +491,20 @@
 }
 
 .page-header__toggle {
-  order: -1;
+  // order: -1;
 
-  position: absolute;
-  top: 17px;
-  right: -10px;
-  z-index: 2;
+  // position: absolute;
+  // top: 17px;
+  // right: 257px;
+  // z-index: 2;
 
   display: block;
   width: 55px;
   height: 45px;
   background-color: $main-color;
+
+  margin-left: 239px;
+  margin-top: 15px;
 
   cursor: pointer;
   border: none;
@@ -550,8 +539,8 @@
     content: "";
 
     position: absolute;
-    top: 20px;
-    left: 13px;
+    // top: 20px;
+    // left: 13px;
 
     width: 26px;
     height: 2px;
@@ -581,19 +570,19 @@
 
   .page-header--opened .page-header__wrapper {
     position: absolute;
-    top: 0;
-    right: 0;
+    // top: 0;
+    // left: 0;
     // left: 70px;
-    z-index: 10;
+    // z-index: 10;
   }
 
   .page-header--opened .page-header__wrapper::before {
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    // top: 0;
+    // left: 0;
+    // z-index: 2;
 
     width: 7px;
     height: 100%;

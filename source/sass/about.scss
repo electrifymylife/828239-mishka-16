@@ -14,6 +14,7 @@
 .about__wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -26,43 +27,73 @@
 }
 
 .about__wrapper--left {
-  margin: 0;
+  margin-bottom: 83px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 34px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 52px;
+    margin: 0;
   }
 }
 
 .about__list {
   @include style-none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 286px;
+
   font-size: $main-font-size;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.1;
+    min-height: 353px;
+    width: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 1.1;
+    min-height: 353px;
+    width: 353px;
   }
 }
 
-.about__item {
-  width: 300px;
-  // margin-bottom: 112px;
+.about__wrapper--left .about__item {
+  width: 220px;
+
+  &:first-child {
+    width: 180px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+    }
+  }
 }
 
-.about__item:nth-child(1),
-.about__item:nth-child(2) {
-  margin-bottom: 112px;
+.about__wrapper--right .about__item {
+  width: 235px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+  }
 }
 
 
 .about__title {
   @include style-none;
   @include title-mobile;
+  letter-spacing: 1px;
+  margin-left: 28px;
+  margin-bottom: 86px;
 
   @media (min-width: $tablet-width) {
     @include title-tablet;
@@ -75,5 +106,108 @@
     margin-top: 57px;
     margin-left: 222px;
     margin-bottom: 101px;
+  }
+}
+
+
+.about__item-icon-flower {
+  position: absolute;
+  width: 33px;
+  height: 38px;
+  margin-top: -75px;
+  margin-left: -153px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -77px;
+    margin-left: -182px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -181px;
+  }
+}
+
+.about__item-icon-money {
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  margin-top: -74px;
+  margin-left: -141px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -75px;
+    margin-left: -198px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -196px;
+  }
+}
+
+.about__item-icon-heart {
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  margin-top: -69px;
+  margin-left: -106px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+    margin-left: -156px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -156px;
+  }
+}
+
+.about__item-icon-ball {
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  margin-top: -72px;
+  margin-left: -191px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -73px;
+    margin-left: -228px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -230px;
+  }
+}
+
+.about__item-icon-rocket {
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  margin-top: -71px;
+  margin-left: -135px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -72px;
+    margin-left: -160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -161px;
+  }
+}
+
+.about__item-icon-gift {
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  margin-top: -73px;
+  margin-left: -178px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -74px;
+    margin-left: -212px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -215px;
   }
 }

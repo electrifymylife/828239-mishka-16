@@ -3,11 +3,16 @@ $main-font-color: #000000;
 $mint-color: #63d1bb;
 $dark-mint-color: #56c3b2;
 $gray-color: #f9f9f9;
+$dark-gray-color: #f1f1f1;
 
 $main-font-size: 17px;
-$main-font-weight: 400;
+$main-font-weight: 300;
+$bold-font-weight: 700;
 
 $desktop-width: 1150px;
 $tablet-width: 768px;
 $mobile-width: 320px;
 $mobile-width-only: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
