@@ -336,7 +336,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 42px;
+    margin-right: 48px;
     margin-left: 85px;
   }
 
@@ -364,10 +364,14 @@
     width: 1px;
     height: 88px;
     top: 0px;
-    right: 399px;
+    right: 397px;
     background-image: url(../img/Layer-12-copy.png);
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 399px;
   }
 }
 
@@ -415,10 +419,14 @@
     height: 88px;
     top: 0px;
     bottom: 0;
-    right: 316px;
+    right: 314px;
     background-image: url(../img/Layer-12-copy.png);
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 316px;
   }
 }
 
@@ -442,7 +450,7 @@
 
   @media (min-width: $tablet-width) {
     top: 37px;
-    right: 350px;
+    right: 346px;
   }
 
   @media (min-width: $desktop-width) {
@@ -459,7 +467,7 @@
 
   @media (min-width: $tablet-width) {
     top: 34px;
-    right: 265px;
+    right: 262px;
   }
 
   @media (min-width: $desktop-width) {
@@ -479,7 +487,7 @@
     line-height: 1.6;
     color: $main-font-color;
     letter-spacing: 0px;
-    margin-left: 489px;
+    margin-left: 495px;
     margin-top: -24px;
   }
 
