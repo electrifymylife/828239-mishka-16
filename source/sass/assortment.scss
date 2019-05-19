@@ -53,6 +53,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 772px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,23 +73,24 @@
 
 
 .assortment__wrapper a {
-  display: block;
-  margin: 0;
+  // display: block;
+  // margin: 0;
   color: $main-color;
   font-weight: $bold-font-weight;
-  margin-left: 28px;
-  margin-top: 26px;
-  margin-right: 360px;
+  // margin-left: 28px;
+  // margin-top: 26px;
+  // margin-right: 360px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 37px;
-    margin-top: 28px;
-    margin-right: 360px;
+    // margin-left: 37px;
+    // margin-top: 28px;
+    // margin-right: 360px;
   }
 }
 
 .assortment__interior,
 .assortment__toys {
+  position: relative;
   height: 104px;
   width: $mobile-width;
   background-color: $mint-color;
@@ -131,34 +133,36 @@
   background-color: $dark-mint-color;
 }
 
-.assortment__interior-icon {
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 216px;
+.assortment__interior span,
+.assortment__toys span{
+  display: inline-block;
+  padding-top: 26px;
+  padding-left: 28px;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -57px;
-    margin-left: 221px;
+    padding-top: 29px;
+    padding-left: 36px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-top: -57px;
-    margin-left: 411px;
+.assortment__interior-icon {
+  position: absolute;
+  top: 24px;
+  right: 36px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
   }
 }
 
 .assortment__toys-icon {
   position: absolute;
-  margin-top: -53px;
-  margin-left: 205px;
+  top: 21px;
+  right: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -56px;
-    margin-left: 203px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -26px;
-    margin-left: 296px;
+    top: 32px;
+    right: 34px;
   }
 }

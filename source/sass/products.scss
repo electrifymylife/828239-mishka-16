@@ -161,6 +161,7 @@
 }
 
 .products__item-buy {
+  @include style-none;
   &:hover,
   &:focus {
     svg path {

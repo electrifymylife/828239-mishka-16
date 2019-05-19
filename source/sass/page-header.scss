@@ -1,7 +1,6 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  min-height: 395px;
 }
 
 .page-header__logo-image {
@@ -32,9 +31,12 @@
   opacity: 1;
 }
 
-.page-header__wrapper {
-  display: flex;
-  flex-direction: column;
+.page-header__wrapper--catalog,
+.page-header__wrapper--form {
+
+  @media (min-width: $tablet-width) {
+    min-height: 395px;
+  }
 }
 
 .main-nav__wrapper {
@@ -94,17 +96,14 @@
 .main-nav {
   position: relative;
   width: $mobile-width;
-  min-height: 395px;
-  margin: 0 auto;
+  min-height: 88px;
 
   @media (min-width: $tablet-width) {
-    min-height: 88px;
     width: $tablet-width;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 88px;
     width: $desktop-width;
     margin: 0;
   }
@@ -499,29 +498,19 @@
 }
 
 .page-header__toggle {
-  // order: -1;
-
-  // position: absolute;
-  // top: 17px;
-  // right: 257px;
-  // z-index: 2;
-
   display: block;
+  position: absolute;
   width: 55px;
   height: 45px;
   background-color: $main-color;
 
-  margin-left: 239px;
-  margin-top: 15px;
+  top: 17px;
+  left: 251px;
 
   cursor: pointer;
   border: none;
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -547,8 +536,8 @@
     content: "";
 
     position: absolute;
-    // top: 20px;
-    // left: 13px;
+    top: 21px;
+    left: 15px;
 
     width: 26px;
     height: 2px;
@@ -558,7 +547,6 @@
 
   &::before {
     transform: rotate(45deg);
-    box-shadow: none;
   }
 
   &::after {
@@ -568,41 +556,21 @@
 
 @media (max-width: $mobile-width-only) {
 
-  .page-header--closed .main-list__item {
-    display: none;
-  }
-
+  .page-header--closed .main-list__item,
   .page-header--closed .user-list__item {
     display: none;
   }
 
+  .page-header--closed
+
   .page-header--opened .page-header__wrapper {
     position: absolute;
-    // top: 0;
-    // left: 0;
-    // left: 70px;
-    // z-index: 10;
-  }
-
-  .page-header--opened .page-header__wrapper::before {
-    content: "";
-
-    position: absolute;
-    // top: 0;
-    // left: 0;
-    // z-index: 2;
-
-    width: 7px;
-    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   .page-header--nojs .page-header__toggle {
     display: none;
-  }
-
-  .page-header--nojs .page-header__wrapper {
-    position: static;
-    min-height: 0;
   }
 
   .page-header--nojs .main-list__item {
