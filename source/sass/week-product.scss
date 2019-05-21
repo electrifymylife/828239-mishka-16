@@ -89,7 +89,11 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-top: -27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -178,12 +182,13 @@
 .week-product__wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
   letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-left: 48px;
-    margin-top: 21px;
+    margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -212,10 +217,12 @@
   @media (min-width: $tablet-width) {
     margin-right: 35px;
     margin-left: 0;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 50px;
+    margin-top: 26px;
   }
 }
 
@@ -244,9 +251,9 @@
   position: absolute;
   width: 325px;
   height: 7px;
-  margin-top: 739px;
-  margin-left: 0;
-  background-image: url(../img/bg-zigzag-line.svg);
+  left: 0;
+  bottom: -42px;
+  background-image: url("/img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 325px;
@@ -255,16 +262,15 @@
   @media (min-width: $tablet-width) {
     width: 776px;
     height: 17px;
-    margin-top: 463px;
-    margin-left: -53px;
+    bottom: -96px;
+    left: -55px;
     background-size: 775px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1060px;
     height: 23px;
-    margin-top: 576px;
-    margin-left: -181px;
+    left: -181px;
     background-size: 1057px;
   }
 }

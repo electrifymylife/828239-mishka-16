@@ -33,7 +33,6 @@
 
 .page-header__wrapper--catalog,
 .page-header__wrapper--form {
-
   @media (min-width: $tablet-width) {
     min-height: 395px;
   }
@@ -60,7 +59,7 @@
   height: 1px;
   top: 79px;
   right: 0;
-  background-image: url(../img/Layer-9.png);
+  background-image: url("/img/Layer-9.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -180,22 +179,22 @@
     position: absolute;
     width: 1px;
     height: 88px;
-    top: 0px;
+    top: 0;
     left: 234px;
-    background-image: url(../img/Layer-12-copy.png);
+    background-image: url("/img/Layer-12-copy.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 }
 
-.main-list__item::before {
+.main-list__item::after {
   display: block;
   content: "";
   position: absolute;
   width: $mobile-width;
   height: 1px;
   right: 0;
-  background-image: url(../img/Layer-9.png);
+  background-image: url("/img/Layer-9.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -234,7 +233,7 @@
 
 .page-header__logo {
   position: absolute;
-  top: 0px;
+  top: 0;
   margin-top: 22px;
   margin-left: 115px;
 
@@ -320,7 +319,7 @@
   &:focus {
     color: #666666;
 
-    svg path {
+    svg {
       fill: $mint-color;
     }
   }
@@ -352,7 +351,7 @@
   width: $mobile-width;
   height: 1px;
   right: 0;
-  background-image: url(../img/Layer-9.png);
+  background-image: url("/img/Layer-9.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -362,9 +361,9 @@
     position: absolute;
     width: 1px;
     height: 88px;
-    top: 0px;
+    top: 0;
     right: 397px;
-    background-image: url(../img/Layer-12-copy.png);
+    background-image: url("/img/Layer-12-copy.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -406,7 +405,7 @@
   height: 1px;
   right: 0;
   bottom: 28px;
-  background-image: url(../img/Layer-9.png);
+  background-image: url("/img/Layer-9.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -416,10 +415,10 @@
     position: absolute;
     width: 1px;
     height: 88px;
-    top: 0px;
+    top: 0;
     bottom: 0;
     right: 314px;
-    background-image: url(../img/Layer-12-copy.png);
+    background-image: url("/img/Layer-12-copy.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -479,13 +478,13 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
     @include style-none;
+    display: block;
     font-size: 15px;
     font-weight: $main-font-weight;
     line-height: 1.6;
     color: $main-font-color;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-left: 495px;
     margin-top: -24px;
   }
@@ -530,7 +529,6 @@
 }
 
 .page-header--opened .page-header__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -555,13 +553,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
-
   .page-header--closed .main-list__item,
   .page-header--closed .user-list__item {
     display: none;
   }
-
-  .page-header--closed
 
   .page-header--opened .page-header__wrapper {
     position: absolute;

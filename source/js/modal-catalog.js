@@ -6,7 +6,7 @@ linkCatalog.forEach(function (item) {
     evt.preventDefault;
     popup.classList.add("modal-show");
   });
-   });
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

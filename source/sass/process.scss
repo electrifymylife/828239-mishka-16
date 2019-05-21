@@ -45,6 +45,7 @@
   position: absolute;
   top: 29px;
   left: 33px;
+  fill: $mint-color;
 
   @media (min-width: $tablet-width) {
     top: 33px;
@@ -62,7 +63,7 @@
   font-size: 13px;
   font-weight: $main-font-weight;
   line-height: 1.85;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   width: 180px;
   margin-top: 201px;
   margin-left: 33px;
@@ -93,7 +94,7 @@
   }
 
   &:active {
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
   }
 
   @media (min-width: $tablet-width) {
@@ -128,21 +129,21 @@
 }
 
 @media (min-width: $mobile-width) and (min-resolution: $retina-dpi),
-       (min-width: $mobile-width) and (min-resolution: $retina-dppx) {
+  (min-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .process__video {
     background-image: url("/img/video-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-       (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .process__video {
     background-image: url("/img/video-tablet@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-       (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .process__video {
     background-image: url("/img/video-desktop@2x.jpg");
   }

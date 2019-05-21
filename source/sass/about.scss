@@ -66,6 +66,10 @@
   }
 }
 
+.about__item {
+  position: relative;
+}
+
 .about__wrapper--left .about__item {
   width: 220px;
 
@@ -114,16 +118,17 @@
   position: absolute;
   width: 33px;
   height: 38px;
-  margin-top: -75px;
-  margin-left: -153px;
+  fill: $mint-color;
+  bottom: 57px;
+  right: 138px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -77px;
-    margin-left: -182px;
+    bottom: 60px;
+    right: 159px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -181px;
+    right: 158px;
   }
 }
 
@@ -131,16 +136,17 @@
   position: absolute;
   width: 47px;
   height: 27px;
-  margin-top: -74px;
-  margin-left: -141px;
+  fill: $mint-color;
+  bottom: 67px;
+  right: 171px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -75px;
-    margin-left: -198px;
+    bottom: 69px;
+    right: 172px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -196px;
+    right: 171px;
   }
 }
 
@@ -148,16 +154,17 @@
   position: absolute;
   width: 34px;
   height: 27px;
-  margin-top: -69px;
-  margin-left: -106px;
+  fill: $mint-color;
+  bottom: 62px;
+  right: 177px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -70px;
-    margin-left: -156px;
+    bottom: 64px;
+    right: 178px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -156px;
+    right: 177px;
   }
 }
 
@@ -165,16 +172,18 @@
   position: absolute;
   width: 35px;
   height: 34px;
-  margin-top: -72px;
-  margin-left: -191px;
+  fill: $mint-color;
+  bottom: 58px;
+  right: 195px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -73px;
-    margin-left: -228px;
+    bottom: 60px;
+    right: 237px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -230px;
+    bottom: 61px;
+    right: 239px;
   }
 }
 
@@ -182,16 +191,18 @@
   position: absolute;
   width: 55px;
   height: 23px;
-  margin-top: -71px;
-  margin-left: -135px;
+  fill: $mint-color;
+  bottom: 68px;
+  right: 184px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -72px;
-    margin-left: -160px;
+    bottom: 69px;
+    right: 226px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -161px;
+    bottom: 71px;
+    right: 228px;
   }
 }
 
@@ -199,15 +210,16 @@
   position: absolute;
   width: 33px;
   height: 32px;
-  margin-top: -73px;
-  margin-left: -178px;
+  fill: $mint-color;
+  bottom: 61px;
+  right: 197px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -74px;
-    margin-left: -212px;
+    bottom: 63px;
+    right: 239px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -215px;
+    right: 241px;
   }
 }
