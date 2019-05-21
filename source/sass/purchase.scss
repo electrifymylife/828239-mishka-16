@@ -421,7 +421,7 @@ input:focus:-ms-input-placeholder {
   &:hover,
   &:focus,
   &:active {
-    svg path {
+    svg {
       fill: $mint-color;
     }
   }
@@ -453,6 +453,7 @@ input:focus:-ms-input-placeholder {
   position: absolute;
   top: 33px;
   right: 39px;
+  fill: #cccccc;
 
   @media (min-width: $tablet-width) {
     top: 61px;
@@ -468,6 +469,7 @@ input:focus:-ms-input-placeholder {
   position: absolute;
   top: 66px;
   right: 34px;
+  fill: #cccccc;
 
   @media (min-width: $tablet-width) {
     top: 35px;

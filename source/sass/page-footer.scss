@@ -350,7 +350,7 @@
 
   &:hover,
   &:focus {
-    svg path {
+    svg {
       fill: $dark-mint-color;
     }
   }
@@ -372,10 +372,11 @@
   letter-spacing: 1px;
   margin-top: 45px;
   margin-left: 67px;
+  fill: $mint-color;
 
   &:hover,
   &:focus {
-    svg path {
+    svg {
       fill: $dark-mint-color;
     }
   }
@@ -406,7 +407,7 @@
 
   &:hover,
   &:focus {
-    svg path {
+    svg {
       fill: $dark-mint-color;
     }
   }

@@ -164,7 +164,7 @@
   @include style-none;
   &:hover,
   &:focus {
-    svg path {
+    svg {
       fill: $mint-color;
     }
   }
