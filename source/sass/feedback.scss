@@ -1,12 +1,12 @@
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-       (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .feedback {
     background-image: url("/img/review@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
-       (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .feedback {
     background-image: url("/img/review@2x.jpg");
   }
@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 545px;
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -129,9 +129,8 @@
 
 .feedback__write {
   @include button;
-  height: 52px;
-  width: 180px;
   height: 18px;
+  width: 180px;
   padding: 15px 38px;
   position: absolute;
   margin-top: 581px;
@@ -204,7 +203,7 @@
   height: 7px;
   top: 678px;
   left: -3px;
-  background-image: url(../img/bg-zigzag-line.svg);
+  background-image: url("/img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 325px;

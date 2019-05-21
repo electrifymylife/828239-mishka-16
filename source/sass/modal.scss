@@ -46,7 +46,7 @@
   font-weight: $main-font-weight;
   margin-top: 12px;
   margin-left: 92px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: $main-font-size;
@@ -78,7 +78,6 @@
   text-align: center;
   width: 88px;
   height: 32px;
-  height: 31px;
   padding-top: 19px;
 
   @media (min-width: $tablet-width) {
@@ -118,7 +117,7 @@
   border-color: #c7c7c7;
 }
 
-.modal-form__size-radio:active + label:before,
+.modal-form__size-radio:active + label::before,
 .modal-form__size-radio:focus + label::before {
   border-color: $mint-color;
 }
