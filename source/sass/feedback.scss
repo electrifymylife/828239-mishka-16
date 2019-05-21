@@ -1,11 +1,26 @@
+@media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
+       (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+  .feedback {
+    background-image: url("/img/review@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
+       (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  .feedback {
+    background-image: url("/img/review@2x.jpg");
+  }
+}
+
 .feedback {
   background-color: $main-color;
-  min-height: 625px;
-  background-image: url("../img/review@1x.jpg");
-  background-repeat: no-repeat;
+  min-height: 680px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 545px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +47,7 @@
 .feedback__wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -48,19 +64,28 @@
   }
 }
 
-.feedback__nickname,
-.feedback__body {
+.feedback__nickname {
   @include style-none;
   font-size: $main-font-size;
   font-weight: $main-font-weight;
   line-height: 1.8;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 
 .feedback__body {
+  @include style-none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: $main-font-weight;
   width: 260px;
+  margin-top: 23px;
+  margin-bottom: 28px;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
+    font-size: $main-font-size;
+    line-height: 1.8;
     width: 730px;
     margin-top: 45px;
     margin-bottom: 34px;
@@ -80,11 +105,14 @@
   font-size: $main-font-size;
   font-weight: 700;
   line-height: 1.8;
+  letter-spacing: 0;
 }
 
 .feedback__title {
   @include style-none;
   @include title-mobile;
+  margin-top: 56px;
+  margin-left: 28px;
 
   @media (min-width: $tablet-width) {
     @include title-tablet;
@@ -102,13 +130,19 @@
 .feedback__write {
   @include button;
   height: 52px;
-  width: 260px;
+  width: 180px;
+  height: 18px;
+  padding: 15px 38px;
+  position: absolute;
+  margin-top: 581px;
+  margin-left: 30px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
-    width: 175px;
-    padding: 14px 38px;
-    margin-top: 78px;
-    margin-right: 432px;
+    position: relative;
+    width: 94px;
+    margin-top: 79px;
+    margin-right: 482px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,11 +152,13 @@
 }
 
 .feedback__wrapper--btn {
-  margin: 0;
+  margin-top: 28px;
+  margin-left: 2px;
 
   @media (min-width: $tablet-width) {
     margin-top: 19px;
-    margin-right: 451px;
+    margin-right: 501px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,34 +167,62 @@
   }
 }
 
+.feedback__prev,
 .feedback__next {
-  margin-left: 31px;
-}
+  border: 1px solid #ececec;
+  padding: 10px 39px;
+  background-color: $main-color;
 
-.feedback::after {
-  display: none;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
-    display: block;
-    content: "";
-    position: absolute;
-    width: $tablet-width;
+    border-style: none;
+    padding: 0;
+  }
+}
+
+.feedback__next {
+  border-left-style: none;
+  margin-left: -7px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 31px;
+  }
+}
+
+.feedback::before {
+  content: "";
+  position: absolute;
+  width: 325px;
+  height: 7px;
+  margin-top: 678px;
+  margin-left: 0;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 325px;
+  transform: rotate(180deg);
+
+  @media (min-width: $tablet-width) {
+    width: 776px;
     height: 17px;
-    margin-top: 115px;
-    background-image: url(../img/zigzag-line-tablet.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    margin-top: 524px;
+    margin-left: -6px;
+    background-size: 775px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 1050px;
+    width: 1060px;
     height: 23px;
-    margin-top: 163px;
-    background-image: url(../img/bg-zigzag-line.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    margin-top: 523px;
+    margin-left: -7px;
+    background-size: 1057px;
   }
 }
