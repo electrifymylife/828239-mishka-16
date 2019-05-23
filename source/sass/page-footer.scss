@@ -191,6 +191,7 @@
   padding: 14px 2px;
   width: 254px;
   margin-top: 39px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 223px;
@@ -424,7 +425,7 @@
 .page-footer__logo--current {
   &:hover,
   &:focus {
-    svg path {
+    svg {
       fill: $main-font-color;
     }
   }

@@ -154,6 +154,7 @@
   background-image: url("/img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   margin-top: 96px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -170,8 +171,10 @@
 }
 
 .process__video-icon {
-  margin-top: 190px;
-  margin-left: 292px;
+  margin-top: 36px;
+  margin-left: 79px;
+  margin-bottom: 50px;
+  margin-right: 100px;
   width: 101px;
   height: 77px;
 
@@ -179,21 +182,48 @@
   &:focus {
     width: 121px;
     height: 92px;
+    margin-left: 69px;
+    margin-top: 28px;
   }
 
   &:active {
     width: 81px;
     height: 62px;
+    margin-left: 89px;
+    margin-top: 44px;
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     margin-top: 190px;
     margin-left: 284px;
+
+    &:hover,
+    &:focus {
+      margin-top: 181px;
+      margin-left: 273px;
+    }
+
+    &:active {
+      margin-top: 197px;
+      margin-left: 293px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 292px;
+
+    &:hover,
+    &:focus {
+      margin-top: 183px;
+      margin-left: 281px;
+    }
+
+    &:active {
+      margin-top: 198px;
+      margin-left: 301px;
+    }
   }
 }
 
