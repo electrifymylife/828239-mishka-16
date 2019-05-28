@@ -166,6 +166,10 @@
   }
 }
 
+.main-list__item {
+  position: relative;
+}
+
 .main-list__item::before {
   display: none;
 
@@ -193,6 +197,7 @@
   position: absolute;
   width: $mobile-width;
   height: 1px;
+  top: 51px;
   right: 0;
   background-image: url("/img/Layer-9.png");
   background-repeat: no-repeat;
@@ -215,7 +220,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
+    top: -32px;
+    left: 184px;
   }
 }
 
@@ -223,11 +229,7 @@
   top: 237px;
 
   @media (min-width: $tablet-width) {
-    top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 0;
+    display: none;
   }
 }
 

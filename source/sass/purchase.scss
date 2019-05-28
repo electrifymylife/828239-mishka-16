@@ -416,14 +416,6 @@ input:focus:-ms-input-placeholder {
 
 .form-contacts__item {
   position: relative;
-
-  &:hover,
-  &:focus,
-  &:active {
-    svg {
-      fill: $mint-color;
-    }
-  }
 }
 
 .form-contacts__item-tel,
@@ -446,6 +438,13 @@ input:focus:-ms-input-placeholder {
   @media (min-width: $desktop-width) {
     width: 701px;
   }
+}
+
+.form-contacts__item-tel:hover + svg,
+.form-contacts__item-email:hover + svg,
+.form-contacts__item-tel:focus + svg,
+.form-contacts__item-email:focus + svg {
+  fill: $mint-color;
 }
 
 .form-contacts__item-tel-icon {
