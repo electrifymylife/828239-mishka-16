@@ -85,7 +85,7 @@
 
 .process__wrapper--txt {
   position: relative;
-  width: 258px;
+  width: 260px;
   border: 1px solid #ececec;
   padding-bottom: 32px;
 
@@ -98,15 +98,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 626px;
-    height: 285px;
+    width: 668px;
+    height: 288px;
     padding-left: 40px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 280px;
-    height: 453px;
+    width: 367px;
+    height: 455px;
     padding-left: 77px;
     padding-right: 8px;
   }
@@ -131,27 +131,27 @@
 @media (min-width: $mobile-width) and (min-resolution: $retina-dpi),
   (min-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .process__video {
-    background-image: url("/img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
   (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .process__video {
-    background-image: url("/img/video-tablet@2x.jpg");
+    background-image: url("../img/video-tablet@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
   (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .process__video {
-    background-image: url("/img/video-desktop@2x.jpg");
+    background-image: url("../img/video-desktop@2x.jpg");
   }
 }
 
 .process__video {
   position: absolute;
-  background-image: url("/img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   margin-top: 96px;
   z-index: 1;
@@ -160,13 +160,13 @@
     position: relative;
     width: 668px;
     height: 455px;
-    background-image: url("/img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 682px;
-    background-image: url("/img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
   }
 }
 
@@ -229,13 +229,13 @@
 
 .process__buy {
   @include button;
-  padding: 14px 15px;
+  padding: 14px 5px;
   width: 192px;
   margin-top: 25px;
   margin-left: 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 30px;
+    padding: 14px 5px;
     width: 585px;
     margin-top: 1px;
     margin-left: 0;

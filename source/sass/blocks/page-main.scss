@@ -37,7 +37,7 @@
     width: $tablet-width;
     height: 24px;
     margin-top: 214px;
-    background-image: url("/img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 772px;
@@ -50,8 +50,8 @@
     width: $desktop-width;
     height: 34px;
     margin-top: 236px;
-    margin-left: -6px;
-    background-image: url("/img/bg-zigzag-fill.svg");
+    margin-left: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 1163px;
@@ -67,6 +67,7 @@
   min-height: 120px;
   width: 245px;
   padding-top: 21px;
+  padding-bottom: 24px;
   margin-left: 31px;
 
   @media (min-width: $tablet-width) {
@@ -75,6 +76,7 @@
     min-height: 65px;
     width: 630px;
     padding-top: 72px;
+    padding-bottom: 5px;
     margin-left: 51px;
   }
 
@@ -82,7 +84,8 @@
     min-height: 65px;
     width: 680px;
     padding-top: 122px;
-    margin-left: 226px;
+    // margin-left: 226px;
+    margin: 0 auto;
   }
 }
 
@@ -109,21 +112,21 @@
 @media (min-width: $mobile-width) and (min-resolution: $retina-dpi),
   (min-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .page-main__wrapper--index {
-    background-image: url("/img/hero-mobile@2x.jpg");
+    background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
   (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .page-main__wrapper--index {
-    background-image: url("/img/hero-tablet@2x.jpg");
+    background-image: url("../img/hero-tablet@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
   (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .page-main__wrapper--index {
-    background-image: url("/img/hero-desktop@2x.jpg");
+    background-image: url("../img/hero-desktop@2x.jpg");
   }
 }
 
