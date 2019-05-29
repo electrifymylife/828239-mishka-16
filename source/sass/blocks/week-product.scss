@@ -1,6 +1,6 @@
 .week-product {
   background-color: $main-color;
-  min-height: 795px;
+  min-height: 825px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -20,7 +20,7 @@
   font-size: 15px;
   font-weight: $main-font-weight;
   line-height: 1.6;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: $main-font-size;
@@ -69,7 +69,7 @@
 
 .week-product__feature,
 .week-product__value {
-  height: 36px;
+  height: 38px;
   padding-bottom: 2px;
   padding-right: 4px;
   border-bottom: 1px solid #ececec;
@@ -131,7 +131,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -25px;
-    padding: 14px 98px;
+    padding: 14px 99px;
     margin: 0;
   }
 

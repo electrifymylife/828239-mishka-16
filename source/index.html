@@ -5,9 +5,9 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="css">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
-    <script src="picturefill.js"></script>
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
 
@@ -74,10 +74,10 @@
     </header>
 
     <main class="page-main container">
-      <div class="page-main__wrapper--index">
+      <div class="page-main__wrapper--index container">
         <h1 class="page-main__title">Милые штуки ручной<br> работы для дома</h1>
       </div>
-      <section class="assortment">
+      <section class="assortment container">
           <h2 class="visually-hidden">Ассортимент магазина</h2>
           <div class="assortment__wrapper">
             <a href="#">
@@ -98,7 +98,7 @@
             </a>
           </div>
       </section>
-      <section class="week-product">
+      <section class="week-product container">
         <div class="week-product__wrapper--ttl">
           <h2 class="week-product__title">Товар недели</h2>
           <p class="week-product__current">Вязаные корзинки</p>
@@ -140,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about container">
         <h2 class="about__title">Коротко о нас:</h2>
         <div class="about__wrapper">
           <div class="about__wrapper--left">
@@ -183,30 +183,32 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
-        <div class="feedback__wrapper--ttl">
-          <h2 class="feedback__title">Отзывы</h2>
-          <a class="feedback__write" href="#">Написать</a>
-        </div>
-        <p class="feedback__body">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <div class="feedback__wrapper">
-          <div class="feedback__wrapper--user">
-            <p class="feedback__name">Анастасия Красильникова</p>
-            <p class="feedback__nickname">@misssssiskras</p>
+      <section class="feedback container">
+        <div class="feedback__wrapper--main">
+          <div class="feedback__wrapper--ttl">
+            <h2 class="feedback__title">Отзывы</h2>
+            <a class="feedback__write" href="#">Написать</a>
           </div>
-          <div class="feedback__wrapper--btn">
-            <button class="feedback__prev" type="button">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                <use xlink:href="#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <button class="feedback__next" type="button">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                <use xlink:href="#icon-right-arrow"></use>
-              </svg>
-            </button>
+          <p class="feedback__body">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <div class="feedback__wrapper--add">
+            <div class="feedback__wrapper--user">
+              <p class="feedback__name">Анастасия Красильникова</p>
+              <p class="feedback__nickname">@misssssiskras</p>
+            </div>
+            <div class="feedback__wrapper--btn">
+              <button class="feedback__prev" type="button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                  <use xlink:href="#icon-left-arrow"></use>
+                </svg>
+              </button>
+              <button class="feedback__next" type="button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                  <use xlink:href="#icon-right-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>

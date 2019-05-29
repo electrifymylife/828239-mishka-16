@@ -38,10 +38,12 @@
   text-transform: uppercase;
   background-color: $main-color;
   border: 2px solid $main-font-color;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
     border-style: none;
+    border: 2px solid #444444;
     background-color: #444444;
     color: $main-color;
   }

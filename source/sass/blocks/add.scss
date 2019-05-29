@@ -81,9 +81,10 @@ textarea:-moz-placeholder {
   font-size: $main-font-size;
   line-height: 1.06;
   font-weight: $main-font-weight;
+  color: #c7c7c7;
   padding-left: 13px;
   padding-top: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -96,9 +97,10 @@ textarea::-moz-placeholder {
   font-size: $main-font-size;
   line-height: 1.06;
   font-weight: $main-font-weight;
+  color: #c7c7c7;
   padding-left: 13px;
   padding-top: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -111,9 +113,10 @@ textarea:-ms-input-placeholder {
   font-size: $main-font-size;
   line-height: 1.06;
   font-weight: $main-font-weight;
+  color: #c7c7c7;
   padding-left: 13px;
   padding-top: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;

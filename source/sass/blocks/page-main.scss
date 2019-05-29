@@ -137,7 +137,7 @@
   margin-top: -28px;
 
   @media (min-width: $tablet-width) {
-    min-height: 754px;
+    min-height: 747px;
     width: $tablet-width;
     background-image: url("../img/hero-tablet@1x.jpg");
     margin-top: -43px;
@@ -147,5 +147,6 @@
     width: $desktop-width;
     background-image: url("../img/hero-desktop@1x.jpg");
     margin-top: -45px;
+    margin-bottom: -121px;
   }
 }
