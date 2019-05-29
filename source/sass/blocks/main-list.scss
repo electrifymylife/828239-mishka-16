@@ -2,9 +2,9 @@
   @include style-none;
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  font-size: $main-font-size;
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 1.41;
   margin-top: 107px;
   margin-left: 75px;
 
@@ -25,18 +25,17 @@
   display: block;
   color: $main-font-color;
   margin-bottom: 55px;
+  letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-right: 29px;
+    margin-right: 28px;
     margin-top: -3px;
-    letter-spacing: 1px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-right: 65px;
-    letter-spacing: 2px;
+    margin-right: 79px;
   }
 }
 

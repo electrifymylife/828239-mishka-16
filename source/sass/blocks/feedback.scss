@@ -14,8 +14,11 @@
 
 .feedback {
   background-color: $main-color;
-  min-height: 680px;
   position: relative;
+}
+
+.feedback__wrapper--main {
+  min-height: 680px;
 
   @media (min-width: $tablet-width) {
     min-height: 545px;
@@ -44,7 +47,7 @@
   }
 }
 
-.feedback__wrapper {
+.feedback__wrapper--add {
   display: flex;
   flex-direction: column;
   margin-left: 28px;
@@ -129,9 +132,9 @@
 
 .feedback__write {
   @include button;
-  height: 18px;
-  width: 180px;
-  padding: 15px 38px;
+  height: 52px;
+  width: 260px;
+  padding: 14px 78px;
   position: absolute;
   margin-top: 581px;
   margin-left: 30px;
@@ -139,14 +142,15 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 94px;
+    height: 53px;
+    width: 176px;
+    padding: 16px 39px;
     margin-top: 79px;
-    margin-right: 482px;
+    margin-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 79px;
-    margin-right: 51px;
   }
 }
 
@@ -156,13 +160,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 19px;
-    margin-right: 501px;
+    margin-right: 69px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 19px;
-    margin-right: 69px;
   }
 }
 

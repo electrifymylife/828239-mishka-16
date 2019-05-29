@@ -22,9 +22,15 @@
   color: $main-font-color;
   font-size: $main-font-size;
   font-weight: $bold-font-weight;
-  line-height: 1.6;
+  line-height: 1.41;
   letter-spacing: -1px;
-  margin-right: 64px;
+  margin-right: 68px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
 }
 
 .add-list a[href] {

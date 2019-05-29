@@ -79,13 +79,11 @@
   display: flex;
   flex-direction: column;
   margin-top: 29px;
-  margin-right: 37px;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     margin-top: 23px;
-    margin-right: 0;
     margin-bottom: 38px;
     margin-left: 22px;
   }
@@ -142,12 +140,12 @@
 .contacts__write {
   @include button;
   padding: 14px 2px;
-  width: 254px;
+  width: 262px;
   margin-top: 39px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 223px;
+    width: 231px;
     margin-top: 55px;
     margin-left: 240px;
   }

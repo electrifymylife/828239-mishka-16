@@ -30,11 +30,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     padding-bottom: 44px;
+    margin-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding-bottom: 124px;
+    margin-top: 0;
+    margin-left: 50px;
   }
 }
 
