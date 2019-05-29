@@ -1,0 +1,192 @@
+.name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 328px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 305px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 303px;
+  }
+}
+
+.name__title {
+  @include style-none;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 1;
+  color: $mint-color;
+  text-transform: uppercase;
+  margin-left: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    margin-left: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 66px;
+    margin-left: 110px;
+  }
+}
+
+.name__list {
+  @include style-none;
+  margin-left: 30px;
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 121px;
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 71px;
+    margin-top: 64px;
+  }
+}
+
+.name__item {
+  @include style-none;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: 1px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+    margin-bottom: 38px;
+  }
+}
+
+.name__item-input {
+  border-style: none;
+  border-bottom: 2px solid $main-font-color;
+  margin-top: 15px;
+  padding-top: 2px;
+  padding-bottom: 16px;
+  width: 260px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom-color: $mint-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 374px;
+    margin-left: 23px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 573px;
+  }
+}
+
+.name__item:first-child .name__item-input {
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 626px;
+  }
+}
+
+input::-webkit-input-placeholder {
+  font-size: $main-font-size;
+  line-height: 1.06;
+  font-weight: $main-font-weight;
+  color: #c7c7c7;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+    padding-left: 16px;
+  }
+}
+
+input:-moz-placeholder {
+  font-size: $main-font-size;
+  line-height: 1.06;
+  font-weight: $main-font-weight;
+  color: #c7c7c7;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+    padding-left: 16px;
+  }
+}
+
+input::-moz-placeholder {
+  font-size: $main-font-size;
+  line-height: 1.06;
+  font-weight: $main-font-weight;
+  color: #c7c7c7;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+    padding-left: 16px;
+  }
+}
+
+input:-ms-input-placeholder {
+  font-size: $main-font-size;
+  line-height: 1.06;
+  font-weight: $main-font-weight;
+  color: #c7c7c7;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1;
+    padding-left: 16px;
+  }
+}
+
+input:focus::-webkit-input-placeholder {
+  color: $main-font-color;
+}
+
+input:focus:-moz-placeholder {
+  color: $main-font-color;
+}
+
+input:focus::-moz-placeholder {
+  color: $main-font-color;
+}
+
+input:focus:-ms-input-placeholder {
+  color: $main-font-color;
+}
+
+.name::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 8px;
+  left: 92px;
+  background-image: url("/img/Layer-3.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
