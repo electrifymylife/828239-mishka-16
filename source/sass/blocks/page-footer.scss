@@ -1,0 +1,88 @@
+.page-footer__title {
+  @include style-none;
+  @include title-mobile;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 40px;
+  margin-left: 28px;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet;
+    margin-top: 58px;
+    margin-left: 48px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include title;
+    margin-top: 140px;
+    margin-left: 221px;
+    letter-spacing: 3px;
+  }
+}
+
+.page-footer__title::before {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 81px;
+    left: 668px;
+    top: -14px;
+    background-image: url("/img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+    left: 113px;
+  }
+}
+
+.page-footer__developed-icon {
+  position: absolute;
+  right: 69px;
+  bottom: -11px;
+
+  @media (min-width: $tablet-width) {
+    right: -55px;
+    bottom: 3px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $dark-mint-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo--current {
+  &:hover,
+  &:focus {
+    svg {
+      fill: $main-font-color;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

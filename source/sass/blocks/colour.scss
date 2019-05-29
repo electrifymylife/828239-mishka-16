@@ -1,0 +1,139 @@
+.colour {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 417px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 304px;
+    background-color: $gray-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 230px;
+    background-color: $gray-color;
+  }
+}
+
+.colour__title {
+  @include style-none;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 1;
+  color: $mint-color;
+  text-transform: uppercase;
+  margin-left: 28px;
+  letter-spacing: 0;
+  margin-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+    margin-left: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
+}
+
+.colour__list {
+  @include style-none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  margin-left: 92px;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    height: 225px;
+    margin-top: 66px;
+    margin-left: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 710px;
+    height: 150px;
+    margin-left: 149px;
+  }
+}
+
+.colour__item {
+  @include style-none;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 1.06;
+  width: 183px;
+  height: 61px;
+
+  @media (min-width: $tablet-width) {
+    height: 76px;
+    font-size: 19px;
+    line-height: 1;
+  }
+}
+
+.colour::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 8px;
+  left: 92px;
+  background-image: url("/img/Layer-3.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.colour__item-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -63px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $main-font-color;
+
+  @media (min-width: $tablet-width) {
+    top: -16px;
+    left: -81px;
+    width: 50px;
+    height: 50px;
+    background-color: $gray-color;
+  }
+}
+
+.colour__item-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -54px;
+  width: 33px;
+  height: 23px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 23px;
+
+  @media (min-width: $tablet-width) {
+    left: -70px;
+    background-size: 34px;
+  }
+}
+
+.colour__item-checkbox + label:hover::before,
+.colour__item-checkbox:focus + label::before {
+  border-color: $mint-color;
+}
+
+.colour__item-checkbox:active + label::before {
+  border-color: #c7c7c7;
+}

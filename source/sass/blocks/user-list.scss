@@ -1,0 +1,186 @@
+.user-list {
+  @include style-none;
+  display: flex;
+  flex-direction: column;
+  font-size: $main-font-size;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-left: 75px;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-top: 32px;
+    margin-left: 92px;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-top: 32px;
+    margin-left: 92px;
+    letter-spacing: 1px;
+  }
+}
+
+.user-list a {
+  color: $main-font-color;
+
+  &:hover,
+  &:focus {
+    color: #666666;
+
+    svg {
+      fill: $mint-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.user-list__item {
+  margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 48px;
+    margin-left: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 85px;
+  }
+}
+
+.user-list__item::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: $mobile-width;
+  height: 1px;
+  right: 0;
+  background-image: url("/img/Layer-9.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 88px;
+    top: 0;
+    right: 397px;
+    background-image: url("/img/Layer-12-copy.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 399px;
+  }
+}
+
+.user-list__item:nth-child(1)::before {
+  top: 237px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.user-list__item:nth-child(2)::before {
+  top: 316px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.user-list__item::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: $mobile-width;
+  height: 1px;
+  right: 0;
+  bottom: 28px;
+  background-image: url("/img/Layer-9.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 88px;
+    top: 0;
+    bottom: 0;
+    right: 314px;
+    background-image: url("/img/Layer-12-copy.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 316px;
+  }
+}
+
+.user-list__search span {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.user-list__search-icon {
+  position: absolute;
+  opacity: 0.2;
+  top: 269px;
+  right: 270px;
+
+  @media (min-width: $tablet-width) {
+    top: 37px;
+    right: 346px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 37px;
+    right: 350px;
+  }
+}
+
+.user-list__basket-icon {
+  position: absolute;
+  opacity: 0.2;
+  top: 346px;
+  right: 270px;
+
+  @media (min-width: $tablet-width) {
+    top: 34px;
+    right: 262px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 34px;
+    right: 265px;
+  }
+}

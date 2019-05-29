@@ -1,0 +1,69 @@
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__wrapper::before {
+  content: "";
+  position: absolute;
+  width: $mobile-width;
+  height: 1px;
+  top: 79px;
+  right: 0;
+  background-image: url("/img/Layer-9.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    top: 88px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    top: 88px;
+    right: 0;
+  }
+}
+
+.main-nav__wrapper--user {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+}
+
+.main-nav {
+  position: relative;
+  width: $mobile-width;
+  min-height: 88px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0;
+  }
+}
