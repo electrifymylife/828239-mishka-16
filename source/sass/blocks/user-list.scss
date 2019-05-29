@@ -18,13 +18,14 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     margin-top: 32px;
-    margin-left: 92px;
+    margin-left: 111px;
     letter-spacing: 1px;
   }
 }
 
 .user-list a {
   color: $main-font-color;
+  letter-spacing: 0;
 
   &:hover,
   &:focus {
@@ -62,7 +63,7 @@
   width: $mobile-width;
   height: 1px;
   right: 0;
-  background-image: url("/img/Layer-9.png");
+  background-image: url("../img/Layer-9.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -74,7 +75,7 @@
     height: 88px;
     top: 0;
     right: 397px;
-    background-image: url("/img/Layer-12-copy.png");
+    background-image: url("../img/Layer-12-copy.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -116,7 +117,7 @@
   height: 1px;
   right: 0;
   bottom: 28px;
-  background-image: url("/img/Layer-9.png");
+  background-image: url("../img/Layer-9.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -129,7 +130,7 @@
     top: 0;
     bottom: 0;
     right: 314px;
-    background-image: url("/img/Layer-12-copy.png");
+    background-image: url("../img/Layer-12-copy.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }

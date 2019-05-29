@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 328px;
+  min-height: 330px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -37,11 +37,11 @@
 .name__list {
   @include style-none;
   margin-left: 30px;
-  margin-top: 27px;
+  margin-top: 29px;
 
   @media (min-width: $tablet-width) {
     margin-left: 121px;
-    margin-top: 63px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -182,7 +182,7 @@ input:focus:-ms-input-placeholder {
   height: 1px;
   top: 8px;
   left: 92px;
-  background-image: url("/img/Layer-3.png");
+  background-image: url("../img/Layer-3.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 

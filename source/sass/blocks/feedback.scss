@@ -1,14 +1,14 @@
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
   (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .feedback {
-    background-image: url("/img/review@2x.jpg");
+    background-image: url("../img/review@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
   (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
   .feedback {
-    background-image: url("/img/review@2x.jpg");
+    background-image: url("../img/review@2x.jpg");
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 545px;
-    background-image: url("/img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
@@ -136,8 +136,8 @@
   width: 260px;
   padding: 14px 78px;
   position: absolute;
-  margin-top: 581px;
-  margin-left: 30px;
+  top: 581px;
+  left: 30px;
   letter-spacing: 0;
 
   @media (min-width: $tablet-width) {
@@ -145,12 +145,8 @@
     height: 53px;
     width: 176px;
     padding: 16px 39px;
-    margin-top: 79px;
-    margin-right: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 79px;
+    top: 79px;
+    left: -50px;
   }
 }
 
@@ -206,7 +202,7 @@
   height: 7px;
   top: 678px;
   left: -3px;
-  background-image: url("/img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 325px;
@@ -224,7 +220,7 @@
     width: 1060px;
     height: 23px;
     top: 523px;
-    left: -7px;
+    left: 41px;
     background-size: 1057px;
   }
 }
