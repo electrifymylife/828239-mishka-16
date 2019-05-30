@@ -86,9 +86,10 @@
 }
 
 .user-list__item:nth-child(1)::before {
-  top: 237px;
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     top: 0;
   }
 
