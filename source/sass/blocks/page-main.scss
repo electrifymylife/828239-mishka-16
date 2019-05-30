@@ -5,15 +5,19 @@
   line-height: 1.1;
   text-align: center;
   padding-top: 72px;
+  width: 300px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include title-tablet;
     padding-top: 153px;
+    width: 500px;
   }
 
   @media (min-width: $desktop-width) {
     @include title;
     padding-top: 155px;
+    width: 600px;
   }
 }
 
@@ -133,7 +137,8 @@
 .page-main__wrapper--index {
   background-color: $gray-color;
   min-height: 282px;
-  width: $mobile-width;
+  width: 100%;
+  // min-width: $mobile-width;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -141,13 +146,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 747px;
-    width: $tablet-width;
+    // width: $tablet-width;
     background-image: url("../img/hero-tablet@1x.jpg");
     margin-top: -43px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    // width: $desktop-width;
     background-image: url("../img/hero-desktop@1x.jpg");
     margin-top: -45px;
     margin-bottom: -121px;
