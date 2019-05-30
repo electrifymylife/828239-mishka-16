@@ -1,13 +1,17 @@
 .about {
   background-color: $main-color;
   min-height: 645px;
+  margin: 0 auto;
+  width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     min-height: 589px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 602px;
+    width: $desktop-width;
   }
 }
 
