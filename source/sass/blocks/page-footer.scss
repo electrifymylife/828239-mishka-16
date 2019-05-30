@@ -44,13 +44,41 @@
   }
 }
 
+.page-footer__developed {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1;
+  color: $main-font-color;
+  letter-spacing: 1px;
+  margin-top: 45px;
+  margin-left: 67px;
+  fill: $mint-color;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $dark-mint-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 51px;
+  }
+}
+
 .page-footer__developed-icon {
   position: absolute;
   right: 69px;
   bottom: -11px;
 
   @media (min-width: $tablet-width) {
-    right: -55px;
+    right: -1px;
     bottom: 3px;
   }
 }

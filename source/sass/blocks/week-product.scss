@@ -2,15 +2,18 @@
   background-color: $main-color;
   min-height: 825px;
   padding-bottom: 30px;
+  width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     min-height: 630px;
     padding: 0;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 682px;
     padding: 0;
+    width: $desktop-width;
   }
 }
 

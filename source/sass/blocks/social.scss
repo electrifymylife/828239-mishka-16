@@ -1,15 +1,9 @@
 .social {
   min-height: 160px;
-  width: $mobile-width;
   background-color: $dark-gray-color;
 
   @media (min-width: $tablet-width) {
     min-height: 143px;
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
   }
 }
 
@@ -17,19 +11,19 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: $mobile-width;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 611px;
+    width: 667px;
     padding-top: 51px;
-    margin-left: 51px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
-    width: 993px;
+    width: 1045px;
   }
 }
 
@@ -43,7 +37,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 12px;
-    margin-left: 75px;
+    margin-left: 71px;
   }
 }
 
@@ -81,31 +75,4 @@
 
 .social__item:nth-child(2) {
   margin-top: -5px;
-}
-
-.page-footer__developed {
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1;
-  color: $main-font-color;
-  letter-spacing: 1px;
-  margin-top: 45px;
-  margin-left: 67px;
-  fill: $mint-color;
-
-  &:hover,
-  &:focus {
-    svg {
-      fill: $dark-mint-color;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 12px;
-    margin-left: 0;
-  }
 }
